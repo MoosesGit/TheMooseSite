@@ -53,9 +53,9 @@ ul, li, a {
 nav {
   height: 60px;
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
-  align-items: center; /* Center items vertically */
-  padding: 0 20px; /* Add padding to the sides */
+  justify-content: flex-end; 
+  align-items: center; 
+  padding: 0 20px; 
 }
 
 
@@ -64,14 +64,13 @@ nav {
   background-color: #cc4d30;
 }
 
-/* Moose link (always on the left) */
+/* Moose link */
 .moose-link {
-
   margin-right: auto; /* Push it to the left */
   padding: 0 20px; /* Add padding for spacing */
   text-decoration: none;
   color: #e0e0e0;
-  font-weight: bold; /* Optional: Make it stand out */
+  font-weight: bold;
 }
 
 .moose-link:hover {
@@ -94,7 +93,7 @@ nav {
 
 .links-container a:hover {
   background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
-  color: #ffffff; /* Ensures text changes for visibility */
+  color: #ffffff;
 }
 
 nav a {
@@ -125,10 +124,9 @@ nav svg {
 }
 
 .open-sidebar-button {
-
   align-items: center;
   justify-content: center;
-  padding: 10px; /* Adds a little spacing */
+  padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 
