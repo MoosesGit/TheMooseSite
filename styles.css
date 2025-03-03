@@ -49,19 +49,30 @@ ul, li, a {
   color: #e0e0e0;
 }
 
-/* Navbar */
-nav {
-  height: 60px;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center; 
-  padding: 0 20px; 
-}
-
 
 #retro-orange{
   height: 100%;
   background-color: #cc4d30;
+}
+
+nav {
+  height: 60px;
+  background-color: #1f1f1f; /* Background color for the full width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1400px; /* Constrain content to 1400px */
+  height: 100%;
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
 }
 
 /* Moose link */
@@ -228,9 +239,12 @@ nav svg {
 }
 
 
+
+
 /* Hero Section */
 #hero {
-  height: 100vh;
+  height: calc(100vh); /* Subtract the height of the nav bar */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,9 +253,11 @@ nav svg {
   overflow: hidden;
 }
 
+/* Centering content in the hero section */
 .hero-content {
   text-align: center;
   z-index: 1;
+  width: 100%; /* Ensure it takes full width */
 }
 
 .hero-content h1 {
@@ -261,6 +277,15 @@ nav svg {
   color: #a0a0a0;
   margin-bottom: 40px;
   animation: fadeIn 2s ease-in-out;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 750px) {
+  #hero {
+    height: calc(100vh - 60px); /* Adjust height for mobile */
+    margin-top: 60px; /* Adjust margin for mobile */
+  }
+
 }
 
 .cta-button {
