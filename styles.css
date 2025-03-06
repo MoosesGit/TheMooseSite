@@ -591,6 +591,12 @@ footer {
   justify-content: space-between;
 }
 
+@media(max-width: 750px){
+  .learn-more{
+    display: none;
+  }
+}
+
 /* Blog Post Detail */
 .blog-post-detail {
   padding: 60px 20px;
@@ -648,6 +654,8 @@ footer {
   text-underline-offset: 5px;
   margin-bottom: 10px;
 }
+
+
 
 /* ==================== */
 /* Purpose Section */
