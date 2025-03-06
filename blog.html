@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moose's Blog</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .blog-container{
+      min-height: calc(95vh - 60px);
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -23,14 +28,59 @@
         </label>
   
         <a href="index.html">Home</a>
-        <a id="retro-orange" href="blog.html">Blog</a>
+        <a id="retro-orange" href="blog.html">Journal</a>
       </div>
     </div>
   </nav>
 
-  <div class="maintenance">
-    <h1>Pardon our dust! We’re busy building something awesome for you. Come back soon to see what’s new! </h1>
-  </div>
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="blog-container">
+      <h1>Journal</h1>
+      <div class="purpose-section">
+        <p>This space is dedicated to documenting my process of incremental <span style="color: #cc4d30;">self-improvement.</span></p>
+      </div>
+      <div class="blog-posts">
+        <a href="journalEntries/entry03-05-25.html" class="blog-post-card">
+          <h2>Ramadan Mubarak 🌙</h2>
+          <p class="post-date">March 5, 2023</p>
+          <div class="post-excerpt-container">
+            <p class="post-excerpt">What unfolded was a quiet, steady transformation that proved the power of small, consistent changes.</p>
+            <p class="post-excerpt" style="color: #cc4d30;">Click To Read More</p>
+          </div>        </a>
+
+        <!-- Blog Post Card (Latest Entry) Copy Start-->
+        <a href="journalEntries/entry02-05-25.html" class="blog-post-card">
+          <h2>The Small Compounding Steps ⏳</h2>
+          <p class="post-date">Febuary 5, 2025</p>
+          <div class="post-excerpt-container">
+            <p class="post-excerpt">What unfolded was a quiet, steady transformation that proved the power of small, consistent changes.</p>
+            <p class="post-excerpt" style="color: #cc4d30;">Click To Read More</p>
+          </div>
+        </a>
+        <!-- Copy End -->
+
+        <!-- Blog Post Card (Older Entry) -->
+        <a href="journalEntries/entry01-05-25.html" class="blog-post-card">
+          <h2>The Purpose Behind This Journal 📓 </h2>
+          <p class="post-date">January 5, 2025</p>
+          <div class="post-excerpt-container">
+            <p class="post-excerpt">This journal serves three primary functions: reflection, documentation, and accountability.</p>
+            <p class="post-excerpt" style="color: #cc4d30;">Click To Read More</p>
+          </div>
+
+        </a>
+
+        <!-- Add more blog post cards here as needed -->
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    ©2025 Mustafa Abdulhussein
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
